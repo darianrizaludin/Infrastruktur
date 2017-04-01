@@ -13,10 +13,10 @@ gambar di atas adalah skema komunikasi antara web django, nginx, dan request dar
 file-file penting untuk administrasi web ada di:
 
 1. `/home/situs/run`:
-  * file `restart.sh` sebagai wrapper *initscript* daemon FastCGI, untuk mengganti *ownership* 
+    * file `restart.sh` sebagai wrapper *initscript* daemon FastCGI, untuk mengganti *ownership* 
 dari socket file yang ada di dalam folder ini
-  * file dengan ekstensi .pid adalah PID dari daemon FastCGI untuk setiap web django
-  * file dengan ekstensi .socket adalah UNIX socket untuk melayani request dari nginx
+    * file dengan ekstensi .pid adalah PID dari daemon FastCGI untuk setiap web django
+    * file dengan ekstensi .socket adalah UNIX socket untuk melayani request dari nginx
 2. file `/etc/init.d/fastcgi` adalah *initscript* untuk *start*/*stop*/*restart* daemon FastCGI.
 daftar web yang dinyalakan ada di variable `DJANGO_SITES`. value dari variable ini adalah web django yang ada
 subfolder-subfolder dalam /home/situs
