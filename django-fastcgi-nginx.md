@@ -17,7 +17,7 @@ file-file penting untuk administrasi web ada di:
 dari socket file yang ada di dalam folder ini
   * file dengan ekstensi .pid adalah PID dari daemon FastCGI untuk setiap web django
   * file dengan ekstensi .socket adalah UNIX socket untuk melayani request dari nginx
-1. file `/etc/init.d/fastcgi` adalah *initscript* untuk *start*/*stop*/*restart* daemon FastCGI.
+2. file `/etc/init.d/fastcgi` adalah *initscript* untuk *start*/*stop*/*restart* daemon FastCGI.
 daftar web yang dinyalakan ada di variable `DJANGO_SITES`. value dari variable ini adalah web django yang ada
 subfolder-subfolder dalam /home/situs
 
